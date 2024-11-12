@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+*{
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+    box-sizing: border-box;
+  
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(26, 26, 39);
+    color: #ffffff;
+}
+.level-btn{
+    background-color: rgb(255, 196, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 14px ;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    transform: translateX(-50%);
+    box-shadow: var(--box-shadow);
+}
+.settings{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #fff4f4;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0s);
+    transition: transition 0.3 ease-in-out;
+}
+.settings.hide{
+    transform: translateY(-100%);
+}
+select{
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+label{
+    color: #ffffff;
+}
+.container{
+    background-color: rgb(36, 39, 43);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgb(6, 6, 7);
+    position: relative;
+    text-align: center;
+    width: 500px;
+}
+h2{
+    background-color: rgb(255, 197, 6);
+    border-radius: 10px;
+    color: #000;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0px 3px 5px;
+}
+.text{
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px;
+    padding: 5px;
+    margin: 0px;
+    
+}
+#word{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+   
+}
+input{
+    border-radius: 5px;
+    
+    padding: 15px 20px;
+    border: none;
+    box-shadow: 0px 3px 5px;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+   
+}
+.game-over{
+    
+    background: inherit;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    flex-direction: column;
+    display: none;
+}
